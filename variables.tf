@@ -57,7 +57,7 @@ variable "network_mode" {
 
 variable "launch_type" {
   description = "Launch type on which your task is running. Valid values are EC2 or FARGATE."
-  default     = "EC2"
+  default     = "FARGATE"
 }
 
 variable "subnets" {
