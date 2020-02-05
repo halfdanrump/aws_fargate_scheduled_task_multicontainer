@@ -19,7 +19,7 @@ module "scheduled_task" {
   launch_type           = "FARGATE"
   container_definitions = "${file("task_definitions/task_production.json")}"
   schedule_expression   = "cron(0/10 * * * ? 0)"
-  cluster_arn           = "${local.persistent_cluster_arn}"
+  cluster_arn           = "cluster_arn"
   memory                = "512"
   cpu                   = "256"
   subnets               = ["subnet1", "subnet2", ...]
